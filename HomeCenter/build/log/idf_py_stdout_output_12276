@@ -1,0 +1,24 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Admin\Documents\UDEMY_ESP32_WIFI_CODE\gateway_gitclone\http_post_request\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/http.c.obj
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt.c.obj
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/coap.c.obj
+C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/coap.c:125:1: warning: 'coap_log_handler' defined but not used [-Wunused-function]
+  125 | coap_log_handler (coap_log_t level, const char *message)
+      | ^~~~~~~~~~~~~~~~
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable prj_iot.elf
+FAILED: prj_iot.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -mlongcalls -Wno-frame-address  @CMakeFiles\prj_iot.elf.rsp -o prj_iot.elf  && cd ."
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(coap.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: multiple definition of `temp_value_outdoor'; esp-idf/main/libmain.a(app_main.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: first defined here
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(coap.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:33: multiple definition of `data_queue'; esp-idf/main/libmain.a(app_main.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:33: first defined here
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(coap.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: multiple definition of `temp_value_indoor'; esp-idf/main/libmain.a(app_main.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: first defined here
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(mqtt.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: multiple definition of `temp_value_indoor'; esp-idf/main/libmain.a(app_main.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: first defined here
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(mqtt.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:33: multiple definition of `data_queue'; esp-idf/main/libmain.a(app_main.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:33: first defined here
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(mqtt.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: multiple definition of `temp_value_outdoor'; esp-idf/main/libmain.a(app_main.c.obj):C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/app_main.h:32: first defined here
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_wifi/lib/esp32/libnet80211.a(wl_offchan.o): warning: common of `ctx' overridden by definition from esp-idf/main/libmain.a(coap.c.obj)
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

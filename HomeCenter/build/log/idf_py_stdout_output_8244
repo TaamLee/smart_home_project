@@ -1,0 +1,29 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Admin\Documents\UDEMY_ESP32_WIFI_CODE\gateway_gitclone\http_post_request\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt.c.obj
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/coap.c.obj
+C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/coap.c: In function 'GetTemperature_Coap':
+C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/coap.c:324:17: warning: unused variable 'put_request' [-Wunused-variable]
+  324 |     coap_pdu_t *put_request = NULL;
+      |                 ^~~~~~~~~~~
+C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/coap.c: In function 'ControlMotor_Coap':
+C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/coap.c:423:17: warning: unused variable 'get_request' [-Wunused-variable]
+  423 |     coap_pdu_t *get_request = NULL;
+      |                 ^~~~~~~~~~~
+At top level:
+C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/main/coap.c:109:1: warning: 'coap_log_handler' defined but not used [-Wunused-function]
+  109 | coap_log_handler (coap_log_t level, const char *message)
+      | ^~~~~~~~~~~~~~~~
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable prj_iot.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/build/prj_iot.bin
+[9/9] cmd.exe /C "cd /D C:\Users\Admin\Documents\UDEMY_ESP32_WIFI_CODE\gateway_gitclone\http_post_request\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/build/partition_table/partition-table.bin C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/gateway_gitclone/http_post_request/build/prj_iot.bin"
+prj_iot.bin binary size 0xf2680 bytes. Smallest app partition is 0x100000 bytes. 0xd980 bytes (5%) free.

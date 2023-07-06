@@ -1,0 +1,9 @@
+-- The C compiler identification is unknown
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/cygwin64/bin/cc
+-- Check for working C compiler: C:/cygwin64/bin/cc - broken
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/coap_server_Copy/main/build/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/Admin/Documents/UDEMY_ESP32_WIFI_CODE/coap_server_Copy/main/build/CMakeFiles/CMakeError.log".
