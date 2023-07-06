@@ -78,7 +78,7 @@ void cmd_handler_task(void *p)
   }
 
 }
-void get_temperature_from_device1 (void* p)
+void get_temperature_from_device1_task (void* p)
 {
   while (1)
   {
@@ -194,7 +194,7 @@ void app_main(void)
     mqtt_app_start();
     
     xTaskCreatePinnedToCore( cmd_handler_task, "cmd_handler", 4*1024, NULL,4,&cmd_handler_task_Handle, 1 );
-    xTaskCreatePinnedToCore( get_temperature_from_device1, "get_temp_task", 4*1024, NULL,4,NULL, 1 );
+    xTaskCreatePinnedToCore( get_temperature_from_device1_task, "get_temp_task", 4*1024, NULL,4,NULL, 1 );
     xTaskCreatePinnedToCore( data_handler_task, "data_handler_task", 4*1024, NULL,4,NULL, 1 );
     xTaskCreatePinnedToCore( receive_cmd_fromThingsboard_device1_task, "receive_cmd_fromThingsboard_device1_task", 4*1024, NULL,5,NULL, 1 );
     xTaskCreatePinnedToCore( receive_cmd_fromThingsboard_device2_task, "receive_cmd_fromThingsboard_device2_task", 4*1024, NULL,5,NULL, 1 );
