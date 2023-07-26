@@ -7,6 +7,7 @@ Các bước chạy code:
 4. chạy: idf.py fullclean  sau đó build chương trình: idf.py build  rồi nạp code xuống kit bằng lệnh: idf.py -p COMx flash monitor  COMx: cổng kết nối với ESP32
 
 Lưu ý: Cần thay đổi tên wifi muốn kết nối phần code của Homecenter link: ../homecenter/main/wifi.c
-![image](https://github.com/TaamLee/smart_home_project/assets/127492072/13d77782-45c2-4bff-abfc-168842bf35e1)  Tạo 1 mqtt broker local trên máy tính và set Static IP : 192.168.0.4
+![image](https://github.com/TaamLee/smart_home_project/assets/127492072/13d77782-45c2-4bff-abfc-168842bf35e1)  
+  Và tạo 1 mqtt broker local trên máy tính và set Static IP : 192.168.0.4
 
 
