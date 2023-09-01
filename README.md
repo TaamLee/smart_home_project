@@ -1,4 +1,6 @@
 # smart_home_project
+Sơ đồ hệ thống
+![image](https://github.com/TaamLee/smart_home_project/assets/127492072/6380d20a-7856-4d22-aefb-191cdd7688f1)
 
 Các bước chạy code:
 1. Tải code 
